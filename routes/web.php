@@ -19,15 +19,12 @@ use App\Http\Controllers\ListingController;
 //tutti i messaggi
 Route::get('/', [ListingController::class, 'index']);
 
-
-  
-
-
+   
+// Creata Form
+Route::get('/listings/create', [ListingController::class, 'create']);
+ 
+   
 //singolo messaggio 
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
-   
-   
-   
-
          
 
