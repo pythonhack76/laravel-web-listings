@@ -1,8 +1,6 @@
-@extends('layout')
 
-<h1>{{$heading}}</h1>
-
-@section('content')
+<x-layout>
+{{-- <h1>{{$heading}}</h1> --}}
 
 @include('partials._hero')
 @include('partials._search')
@@ -31,8 +29,8 @@
 
     @endunless
    </div>
-    @endsection
 
+</x-layout>
 
 
 
